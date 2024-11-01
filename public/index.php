@@ -5,22 +5,21 @@ if (isset($_SESSION['user_id'])) {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Opcional: Enlace a archivo CSS -->
+    <title>Inicio de Sesión - MOONCLUB</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
     <div class="login-container">
-        <h2>Inicio de Sesión</h2>
+        <h2>Bienvenido a MOONCLUB</h2>
         <form method="POST" action="login.php">
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">Correo Electrónico</label>
             <input type="email" id="email" name="email" required>
-            <label for="password">Contraseña:</label>
+            <label for="password">Contraseña</label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Iniciar Sesión</button>
         </form>
