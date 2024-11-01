@@ -1,15 +1,7 @@
 {
-    "name": "moonclub/entradas",
-    "version": "1.0.0",
-    "description": "Plataforma de ventas de entradas con códigos QR",
-    "main": "index.php",
-    "engines": {
-      "node": "18.x"
-    },
-    "scripts": {
-      "start": "node index.js"
-    },
-    "require": { "php": "^8.1",
-    "phpmailer/phpmailer": "^6.5", 
-    "chillerlan/php-qrcode": "^5.0" }
+  "require": {
+    "php": "^8.1",
+    "phpmailer/phpmailer": "^6.5",
+    "chillerlan/php-qrcode": "^5.0"
   }
+}

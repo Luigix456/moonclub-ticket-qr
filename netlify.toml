@@ -6,3 +6,8 @@
   from = "/*"
   to = "/index.php"
   status = 200
+
+[[plugins]] package = "@netlify/plugin-phoenix"
+
+[plugins.inputs]
+  php_version = "8.1"
