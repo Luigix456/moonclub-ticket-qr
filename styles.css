@@ -21,6 +21,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
     text-align: center;
+    animation-name: fadeIn;       /* Nombre de la animación */
+    animation-timing-function: ease-in-out; /* Función de tiempo */
+    animation-fill-mode: forwards; /* Modo de relleno */
+    animation-timeline: view();
+    animation-range: entry 30% cover 35%;
 }
 
 h2 {
@@ -68,4 +73,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
