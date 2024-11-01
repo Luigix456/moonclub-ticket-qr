@@ -1,4 +1,7 @@
 <?php
+require 'vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 // Verificar si el usuario tiene rol de RRPP
 include 'db.php';
 session_start();
