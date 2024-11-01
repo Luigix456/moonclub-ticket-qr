@@ -1,6 +1,4 @@
 <?php
-// Incluir autoload de Composer si es necesario
-require '../vendor/autoload.php';
 
 $host = getenv('DB_HOST');
 $db = getenv('DB_NAME');
@@ -14,4 +12,5 @@ if ($conn->connect_error) {
 
 echo "Conexión exitosa a la base de datos";
 ?>
+
 
