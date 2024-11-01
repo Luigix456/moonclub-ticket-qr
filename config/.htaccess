@@ -1,4 +1,20 @@
+# Establecer el entorno para PHP
+SetEnv DB_HOST tu_host
+SetEnv DB_USER tu_usuario
+SetEnv DB_PASS tu_contraseña
+SetEnv DB_NAME tu_base_de_datos
+
+# Configuración para manejar errores de manera personalizada
+ErrorDocument 404 /public/404.html
+
+# Redireccionar todas las solicitudes al index.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ public/$1 [L]
+RewriteRule ^(.*)$ public/index.php [L,QSA]
+
+# Permitir el acceso a la carpeta qrs para servir imágenes de QR
+<Directory /qrs>
+    Order Allow,Deny
+    Allow from all
+</Directory>
