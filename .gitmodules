@@ -1,0 +1,9 @@
+[submodule "vendor/chillerlan/php-qrcode"]
+    path = vendor/chillerlan/php-qrcode
+    url = https://github.com/chillerlan/php-qrcode.git
+[submodule "vendor/chillerlan/php-settings-container"]
+    path = vendor/chillerlan/php-settings-container
+    url = https://github.com/chillerlan/php-settings-container.git
+[submodule "vendor/phpmailer/phpmailer"]
+    path = vendor/phpmailer/phpmailer
+    url = https://github.com/PHPMailer/PHPMailer.git
