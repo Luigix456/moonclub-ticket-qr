@@ -2,12 +2,8 @@
   publish = "public"
   command = "composer install && php -S localhost:8080 -t public"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.php"
-  status = 200
-
-[[plugins]] package = "@netlify/plugin-phoenix"
+[[plugins]]
+  package = "@netlify/plugin-phoenix"
 
 [plugins.inputs]
   php_version = "8.1"
