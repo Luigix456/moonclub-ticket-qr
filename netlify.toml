@@ -1,9 +1,9 @@
 [build]
   publish = "public"
-  command = "composer install"
-
-[context.production]
-  command = "docker build -t my-php-app . && docker run -p 8080:80 my-php-app"
+  command = "composer install && php -S localhost:8080 -t public"
 
 [[plugins]]
-  package = "@netlify/plugin-docker"
+  package = "@netlify/plugin-phoenix"
+
+[plugins.inputs]
+  php_version = "8.1"
